@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>
+		Variable Scope : Global and Local
+	</title>
+	<script type="text/javascript">
+		var mess = "Who let the dogs out?"; // Global
+		
+		function Messenger()
+		{
+			var mess1 = "No one";  //Local
+			document.write(mess + " inside function " + mess1 + "<br/>");
+		}		
+		Messenger();
+		document.write(mess + " outside function " + mess1 + "<br/>");
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
