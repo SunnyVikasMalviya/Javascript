@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>
+		If Statements
+	</title>
+	<script type="text/javascript">
+		/*
+		if(condition)
+		{
+			your code goes here
+		}
+		*/
+		day = 'friday';
+		tomorrow = 'saturday';
+		if(day=='friday')
+		{
+			document.write("Thank god its friday.");
+			if(tomorrow == 'saturday')  //Nested if
+			{
+				document.write("<br/>Rabba Meharban");
+			}
+			else
+			{
+				document.write('<br/>So its not friday today.');
+			}
+		}
+		else if(tomorrow == 'saturday')
+		{
+			document.write("How come its not friday today?");
+		}
+		else
+		{
+			document.write("God...Why is it not friday yet?");
+		}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
