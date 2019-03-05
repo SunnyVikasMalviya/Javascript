@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>
+		Referencing Elements on the web pages
+	</title>
+	<script type="text/javascript">
+		//document.gerElementById('Id of the html tag goes in here.');
+		function change()
+		{
+			var A = document.getElementById('A');
+			if(A.innerHTML == 'It tickles!!!')
+			{
+				A.innerHTML = 'Click Me Now!!!';
+			}
+			else
+			{
+				A.innerHTML = 'It tickles!!!';
+			}
+			//  You can also do this
+			//document.getElementById('A').innerHTML = 'IT TICKLES!!!:)';
+		}
+	</script>
+</head>
+<body>
+	<p id='A' onclick='change();'>
+	Click Me Now!!!
+	</p>
+</body>
+</html>
