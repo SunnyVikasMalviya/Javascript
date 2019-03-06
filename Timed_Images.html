@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>
+		Changing Image with Timer
+	</title>
+	<script type="text/javascript">
+		var image_tracker = '1';
+		function changeImage()
+		{
+			var Img = document.getElementById('Image');
+			if(image_tracker == '1')
+			{	
+				Img.src = 'L2.png';
+				image_tracker = '2';
+			}
+			else if(image_tracker == '2')
+			{
+				Img.src = 'L3.png';
+				image_tracker = '3';
+			else 
+			{
+				Img.src = 'L1.png';
+				image_tracker = '1';
+			}
+		}		
+		//setTimeout('javascript code in here','time in milli seconds  i.e. 1000 ms = 1 sec');
+		setTimeout('changeImage()', 2000);
+		//setInterval('javascript code in here', 'time in milli seconds')
+		var timer = setInterval('changeImage()', 2000);
+	</script>
+</head>
+<body>
+	<img src="L1.png" alt="Logos" id="Image" onclick="clearInterval(timer)"/>
+</body>
+</html>
