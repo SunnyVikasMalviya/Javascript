@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>
+		Changing Image Source(Switch)
+	</title>
+	<script type="text/javascript">
+		var image_tracker = 1;
+		function changeImage()
+		{
+			var Img = document.getElementById('Image');
+			switch(image_tracker)
+			{
+				case 1 :Img.src = "L2.png";
+						image_tracker = 2;
+						break;
+				case 2 :Img.src = "L3.png";
+						image_tracker = 3;
+						break;
+				case 3 :Img.src = "L1.png";
+						image_tracker = 1;
+						break;
+			}
+		}
+		//Switch can only have single character cases to switch over.
+	</script>
+</head>
+<body>
+	<img src="L1.png" alt="Logos" id="Image" onclick="changeImage();">
+</body>
+</html>
