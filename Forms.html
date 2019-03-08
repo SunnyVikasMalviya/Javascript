@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>
+		Forms
+	</title>
+	<script type="text/javascript">
+		function display_welcome()
+		{
+			var welcome_para = document.getElementById('wel');
+			var name = document.getElementById('name');
+			welcome_para.innerHTML = "Welcome " + name.value;
+		}
+	</script>
+</head>
+<body>
+	<p id="wel"></p>
+	<form>
+		What is your name:<input type="text" id="name"/><br/>
+		<input type="button" value="Done" onclick="display_welcome();"/>
+	</form>
+</body>
+</html>
