@@ -19,6 +19,7 @@
 			{
 				Img.src = 'L3.png';
 				image_tracker = '3';
+			}
 			else 
 			{
 				Img.src = 'L1.png';
@@ -26,8 +27,10 @@
 			}
 		}		
 		//setTimeout('javascript code in here','time in milli seconds  i.e. 1000 ms = 1 sec');
+		//setTimeout() only works once 
 		setTimeout('changeImage()', 2000);
 		//setInterval('javascript code in here', 'time in milli seconds')
+		//setInteral() keeps repeating the action given to it
 		var timer = setInterval('changeImage()', 2000);
 	</script>
 </head>
