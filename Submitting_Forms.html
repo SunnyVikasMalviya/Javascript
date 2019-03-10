@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>
+		Submitting Forms
+	</title>
+	<script type="text/javascript">
+		
+	</script>
+</head>
+<body>
+<form action="someotherpage.php" method="get">
+<!--
+Their are two methods to submit forms.
+The first one as mentioned is GET, and the other one is POST.
+These methods are used to send data to the action page.
+GET is not secure as it sends data through the url and the data can be easily seen by other users.
+POST is a secure method that sends data without including it in the url.
+-->
+	username : <input type="text" name="name"/>
+	password : <input type="password" name="pass"/>
+	<input type="submit" value="login"/>
+</form>
+</body>
+</html>
