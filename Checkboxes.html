@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>
+		Checkboxes
+	</title>
+	<script type="text/javascript">
+		function is_checked()
+		{
+			var E1 = document.getElementById('E1').checked;
+			var E2 = document.getElementById('E2').checked;
+			var E3 = document.getElementById('E3').checked;
+			var E4 = document.getElementById('E4').checked;
+			var E5 = document.getElementById('E5').checked;
+			if(E1 == false && E2 == false && E3 == false && E4 == false && E5 == false)
+			{
+				alert("Please select at least one of the options.");
+				return false;
+			}
+			else
+			{
+				return true; 
+			}
+		}
+	</script>
+</head>
+<body>
+	<form action="submission.html" method="get" onsubmit="return is_checked();">
+		<p>Please select the categories that you are interested to buy:</p>
+		Sports<input type="checkbox" name="interests" value="sports" id="E1"/><br/>
+		Studies<input type="checkbox" name="interests" value="studies" id="E2"/><br/>
+		Tools<input type="checkbox" name="interests" value="tools" id="E3"/><br/>
+		Electronics<input type="checkbox" name="interests" value="electronics" id="E4"/><br/>
+		Computers<input type="checkbox" name="interests" value="computers" id="E5"/><br/>
+		<input type="Submit" value="Done!"/>
+	</form>
+</body>
+</html>
