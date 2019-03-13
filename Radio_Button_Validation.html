@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>
+		Radio Button Validation
+	</title>
+	<script type="text/javascript">
+		function is_checked()
+		{
+			var Yes_checked = document.getElementById("aryes").checked;
+			var No_checked = document.getElementById("arno").checked;
+			if(Yes_checked == false && No_checked == false)
+			{	
+				alert("Kam se kam ek to select ker gareeb.");
+				return false;
+			}
+			else
+			{
+				return true;
+			}
+		}
+	</script>
+</head>
+<body>
+	<form action="submission.html" method="get" onsubmit="return is_checked();">
+	<p>Do you want to auto renew your membership?</p>
+	Yes<input type="radio" name="auto_renew" value="yes" id="aryes"/><br/>
+	No<input type="radio" name="auto_renew" value="no" id="arno"/><br/>
+	<input type="submit" value="submit"/>
+	
+	</form>
+</body>
+</html>
